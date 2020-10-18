@@ -13,6 +13,7 @@ val Meta.example: CliPlugin
         "Example" {
             meta(
                     // Handle a function with name helloWorld
+                    // See: https://meta.arrow-kt.io/apidocs/compiler-plugin/arrow.meta.quotes.nameddeclaration.stub.typeparameterlistowner/-named-function/index.html
                     namedFunction(this, { name == "helloWorld" }) { c ->
                         Transform.replace(
                                 replacing = c,
